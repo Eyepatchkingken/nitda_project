@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
               children: [
                 ListTile(
                     leading: Icon(
-                      Icons.summarize,
+                      Icons.task,
                       color: Colors.white,
                     ),
                     //a list of tiles
@@ -61,7 +61,7 @@ class HomePage extends StatelessWidget {
               children: [
                 ListTile(
                   leading: Icon(
-                    Icons.pageview_rounded,
+                    Icons.domain,
                     color: Colors.white,
                   ),
                   title: Text(
@@ -87,7 +87,7 @@ class HomePage extends StatelessWidget {
               children: [
                 ListTile(
                   leading: Icon(
-                    Icons.next_plan_sharp,
+                    Icons.tab,
                     color: Colors.white,
                   ),
                   title: Text("Human Capital, Content and Capacity",
@@ -110,7 +110,7 @@ class HomePage extends StatelessWidget {
               children: [
                 ListTile(
                   leading: Icon(
-                    Icons.polyline_sharp,
+                    Icons.biotech,
                     color: Colors.white,
                   ),
                   title: Text(
@@ -133,7 +133,7 @@ class HomePage extends StatelessWidget {
               children: [
                 ListTile(
                   leading: Icon(
-                    Icons.polyline_sharp,
+                    Icons.group,
                     color: Colors.white,
                   ),
                   title: Text(
@@ -156,7 +156,7 @@ class HomePage extends StatelessWidget {
               children: [
                 ListTile(
                   leading: Icon(
-                    Icons.polyline_sharp,
+                    Icons.auto_graph_outlined,
                     color: Colors.white,
                   ),
                   title: Text(
@@ -179,7 +179,7 @@ class HomePage extends StatelessWidget {
               children: [
                 ListTile(
                   leading: Icon(
-                    Icons.polyline_sharp,
+                    Icons.analytics,
                     color: Colors.white,
                   ),
                   title: Text(
