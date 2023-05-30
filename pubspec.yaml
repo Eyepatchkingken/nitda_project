@@ -30,5 +30,13 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/
-    - images/
+    - assets/images/Allocation.jpg
+    - assets/images/default_profile_pic.jpg
+    - assets/images/Enterprise.jpg
+    - assets/images/Funding.jpg
+    - assets/images/HumanCap.jpg
+    - assets/images/Infrastructure.jpg
+    - assets/images/Monitoring.jpg
+    - assets/images/NITDA_00x500.jpeg
+    - assets/images/NITDA_400x400.jpg
+    - assets/images/Research.jpg

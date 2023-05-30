@@ -3,6 +3,7 @@ import 'package:nitda_project/pillars_screen.dart';
 import 'package:nitda_project/executive_summary_screen.dart';
 import 'package:nitda_project/strategic_context_screen.dart';
 import 'package:nitda_project/strategic_methodology_screen.dart';
+import 'package:nitda_project/image_screen.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
@@ -42,12 +43,17 @@ class HomePage extends StatelessWidget {
                       color: Colors.white,
                     ),
                     //a list of tiles
-                    title: Text("Allocation of tasks to Assigned Workspace",
+                    title: Text("Allocation of tasks to Assigned Workstreams",
                         style: TextStyle(color: Colors.white)),
                     onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: ((context) => ExecutiveSummaryPage())))),
+                            builder: ((context) => ImageScreen(
+                                  imagePath: 'assets/images/Allocation.jpg',
+                                  appBarTitle:
+                                      'Allocation of tasks to Assigned Workstreams',
+                                  appBarColor: Colors.green.shade900,
+                                ))))),
                 Container(
                   padding: const EdgeInsets.only(left: 15.0, right: 15.0),
                   child: Divider(
@@ -71,7 +77,11 @@ class HomePage extends StatelessWidget {
                   onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => StrategicContextPage(),
+                        builder: (context) => ImageScreen(
+                            imagePath: 'assets/images/Infrastructure.jpg',
+                            appBarTitle:
+                                'Infrastructure and Internal Capabilities',
+                            appBarColor: Colors.green.shade900),
                       )),
                 ),
                 Container(
@@ -95,7 +105,12 @@ class HomePage extends StatelessWidget {
                   onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => StrategyMethodPage())),
+                          builder: (context) => ImageScreen(
+                                imagePath: 'assets/images/HumanCap.jpg',
+                                appBarTitle:
+                                    'Human Capital, Content and Capacity',
+                                appBarColor: Colors.green.shade900,
+                              ))),
                 ),
                 Container(
                   padding: const EdgeInsets.only(left: 15.0, right: 15.0),
@@ -117,8 +132,14 @@ class HomePage extends StatelessWidget {
                     "Research and Development, Education and Emerging Technologies",
                     style: TextStyle(color: Colors.white),
                   ),
-                  onTap: () => Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => PillarsPage())),
+                  onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => ImageScreen(
+                                imagePath: 'assets/images/Research.jpg',
+                                appBarTitle: 'Research and Development',
+                                appBarColor: Colors.green.shade900,
+                              ))),
                 ),
                 Container(
                   padding: const EdgeInsets.only(left: 15.0, right: 15.0),
@@ -140,8 +161,14 @@ class HomePage extends StatelessWidget {
                     "Funding and Partnerships",
                     style: TextStyle(color: Colors.white),
                   ),
-                  onTap: () => Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => PillarsPage())),
+                  onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => ImageScreen(
+                                imagePath: 'assets/images/Funding.jpg',
+                                appBarTitle: 'Funding and Partnerships',
+                                appBarColor: Colors.green.shade900,
+                              ))),
                 ),
                 Container(
                   padding: const EdgeInsets.only(left: 15.0, right: 15.0),
@@ -163,8 +190,15 @@ class HomePage extends StatelessWidget {
                     "Enterprise Development and Growth",
                     style: TextStyle(color: Colors.white),
                   ),
-                  onTap: () => Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => PillarsPage())),
+                  onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => ImageScreen(
+                                imagePath: 'assets/images/Enterprise.jpg',
+                                appBarTitle:
+                                    'Enterprise Development and Growth',
+                                appBarColor: Colors.green.shade900,
+                              ))),
                 ),
                 Container(
                   padding: const EdgeInsets.only(left: 15.0, right: 15.0),
@@ -186,8 +220,14 @@ class HomePage extends StatelessWidget {
                     "Monitoring, Data and Analysis",
                     style: TextStyle(color: Colors.white),
                   ),
-                  onTap: () => Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => PillarsPage())),
+                  onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => ImageScreen(
+                                imagePath: 'assets/images/Monitoring.jpg',
+                                appBarTitle: 'Monitoring, Data and Analysis',
+                                appBarColor: Colors.green.shade900,
+                              ))),
                 ),
                 Container(
                   padding: const EdgeInsets.only(left: 15.0, right: 15.0),
