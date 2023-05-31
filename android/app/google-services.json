@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "374103830841",
+    "project_id": "nitda-project",
+    "storage_bucket": "nitda-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374103830841:android:76c8f14a54728bdcc878e8",
+        "android_client_info": {
+          "package_name": "com.example.nitda_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsz1kpbZNb0Mu9qu0_jRZnBPa5pTXxBwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
