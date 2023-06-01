@@ -65,10 +65,14 @@ class HomePage extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                             builder: ((context) => ImageScreen(
-                                  imagePath: 'assets/images/Allocation.jpg',
+                                  imagePaths: [
+                                    'assets/images/Allocation.jpg',
+                                    'assets/images/Allocation.jpg',
+                                  ],
                                   appBarTitle:
                                       'Allocation of tasks to Assigned Workstreams',
                                   appBarColor: Colors.green.shade900,
+                                  sliderBackgroundColor: Colors.white,
                                 ))))),
                 Container(
                   padding: const EdgeInsets.only(left: 15.0, right: 15.0),
@@ -94,10 +98,15 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => ImageScreen(
-                            imagePath: 'assets/images/Infrastructure.jpg',
-                            appBarTitle:
-                                'Infrastructure and Internal Capabilities',
-                            appBarColor: Colors.green.shade900),
+                          imagePaths: [
+                            'assets/images/Infrastructure.jpg',
+                            'assets/images/Allocation.jpg',
+                          ],
+                          appBarTitle:
+                              'Infrastructure and Internal Capabilities',
+                          appBarColor: Colors.green.shade900,
+                          sliderBackgroundColor: Colors.white,
+                        ),
                       )),
                 ),
                 Container(
@@ -122,10 +131,11 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => ImageScreen(
-                                imagePath: 'assets/images/HumanCap.jpg',
+                                imagePaths: ['assets/images/HumanCap.jpg'],
                                 appBarTitle:
                                     'Human Capital, Content and Capacity',
                                 appBarColor: Colors.green.shade900,
+                                sliderBackgroundColor: Colors.white,
                               ))),
                 ),
                 Container(
@@ -152,9 +162,10 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => ImageScreen(
-                                imagePath: 'assets/images/Research.jpg',
+                                imagePaths: ['assets/images/Research.jpg'],
                                 appBarTitle: 'Research and Development',
                                 appBarColor: Colors.green.shade900,
+                                sliderBackgroundColor: Colors.white,
                               ))),
                 ),
                 Container(
@@ -181,9 +192,10 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => ImageScreen(
-                                imagePath: 'assets/images/Funding.jpg',
+                                imagePaths: ['assets/images/Funding.jpg'],
                                 appBarTitle: 'Funding and Partnerships',
                                 appBarColor: Colors.green.shade900,
+                                sliderBackgroundColor: Colors.white,
                               ))),
                 ),
                 Container(
@@ -210,10 +222,11 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => ImageScreen(
-                                imagePath: 'assets/images/Enterprise.jpg',
+                                imagePaths: ['assets/images/Enterprise.jpg'],
                                 appBarTitle:
                                     'Enterprise Development and Growth',
                                 appBarColor: Colors.green.shade900,
+                                sliderBackgroundColor: Colors.white,
                               ))),
                 ),
                 Container(
@@ -240,9 +253,10 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => ImageScreen(
-                                imagePath: 'assets/images/Monitoring.jpg',
+                                imagePaths: ['assets/images/Monitoring.jpg'],
                                 appBarTitle: 'Monitoring, Data and Analysis',
                                 appBarColor: Colors.green.shade900,
+                                sliderBackgroundColor: Colors.white,
                               ))),
                 ),
                 Container(
