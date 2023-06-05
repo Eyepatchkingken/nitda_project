@@ -66,8 +66,8 @@ class HomePage extends StatelessWidget {
                         MaterialPageRoute(
                             builder: ((context) => ImageScreen(
                                   imagePaths: [
-                                    'assets/images/Allocation.jpg',
-                                    'assets/images/Allocation.jpg',
+                                    'assets/images/allocation_1.jpg',
+                                    'assets/images/allocation_2.jpg',
                                   ],
                                   appBarTitle:
                                       'Allocation of tasks to Assigned Workstreams',
@@ -99,8 +99,8 @@ class HomePage extends StatelessWidget {
                       MaterialPageRoute(
                         builder: (context) => ImageScreen(
                           imagePaths: [
-                            'assets/images/Infrastructure.jpg',
-                            'assets/images/Allocation.jpg',
+                            'assets/images/infrastructure.jpg',
+                            
                           ],
                           appBarTitle:
                               'Infrastructure and Internal Capabilities',
@@ -131,7 +131,9 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => ImageScreen(
-                                imagePaths: ['assets/images/HumanCap.jpg'],
+                                imagePaths: ['assets/images/human_capital.jpg',
+                                             'assets/images/human_capital_2.jpg'
+                                ],
                                 appBarTitle:
                                     'Human Capital, Content and Capacity',
                                 appBarColor: Colors.green.shade900,
@@ -162,7 +164,7 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => ImageScreen(
-                                imagePaths: ['assets/images/Research.jpg'],
+                                imagePaths: ['assets/images/Research.jpg', 'assets/images/Research_2.jpg'],
                                 appBarTitle: 'Research and Development',
                                 appBarColor: Colors.green.shade900,
                                 sliderBackgroundColor: Colors.white,
@@ -192,7 +194,7 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => ImageScreen(
-                                imagePaths: ['assets/images/Funding.jpg'],
+                                imagePaths: ['assets/images/funding.jpg', 'assets/images/funding_2.jpg'],
                                 appBarTitle: 'Funding and Partnerships',
                                 appBarColor: Colors.green.shade900,
                                 sliderBackgroundColor: Colors.white,
@@ -222,7 +224,7 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => ImageScreen(
-                                imagePaths: ['assets/images/Enterprise.jpg'],
+                                imagePaths: ['assets/images/Enterprise.jpg', 'assets/images/Enterprise_2.jpg'],
                                 appBarTitle:
                                     'Enterprise Development and Growth',
                                 appBarColor: Colors.green.shade900,
@@ -253,7 +255,7 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => ImageScreen(
-                                imagePaths: ['assets/images/Monitoring.jpg'],
+                                imagePaths: ['assets/images/monitoring.jpg'],
                                 appBarTitle: 'Monitoring, Data and Analysis',
                                 appBarColor: Colors.green.shade900,
                                 sliderBackgroundColor: Colors.white,

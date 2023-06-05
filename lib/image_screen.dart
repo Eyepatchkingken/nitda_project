@@ -39,13 +39,11 @@ class _ImageScreenState extends State<ImageScreen> {
             child: CarouselSlider(
               items: widget.imagePaths.map((imagePath) {
                 return Container(
-                  decoration: BoxDecoration(
+                  child: PhotoView(
+                    backgroundDecoration: BoxDecoration(
                     color: widget.sliderBackgroundColor,
-                    image: DecorationImage(
-                      image: AssetImage(imagePath),
-                      fit: BoxFit.cover,
-                    ),
                   ),
+                    imageProvider: AssetImage(imagePath),),
                 );
               }).toList(),
               options: CarouselOptions(
@@ -98,4 +96,4 @@ class _ImageScreenState extends State<ImageScreen> {
     );
   }
 }
-}
+
