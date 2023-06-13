@@ -1,6 +1,6 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:nitda_project/firebase_files/login_screen.dart';
+import 'package:nitda_project/firebase_files/widget_tree.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 void main() async {
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       home: AnimatedSplashScreen(
         splash: 'assets/images/NITDA_400x400.jpg',
         duration: 1500,
-        nextScreen: const LoginPage(),
+        nextScreen: const WidgetTree(),
         splashTransition: SplashTransition.fadeTransition, 
       ),
     );
