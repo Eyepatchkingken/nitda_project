@@ -7,13 +7,13 @@ class HccPage extends StatelessWidget {
   Widget build(BuildContext context) {
   return Scaffold(
       appBar: AppBar(
-        leading: IconButton(icon: Icon(Icons.arrow_back),
+        leading: IconButton(icon: const Icon(Icons.arrow_back),
         onPressed: (){
           Navigator.pop(context);
         },
         ),
         centerTitle: true,
-       title: Text("Human Capital, Content and Capacity", 
+       title: const Text("Human Capital, Content and Capacity", 
        style: TextStyle(color: Colors.white),
        ),
        backgroundColor: Colors.green.shade900,

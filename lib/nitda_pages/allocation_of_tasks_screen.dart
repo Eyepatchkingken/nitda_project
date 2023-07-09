@@ -7,13 +7,13 @@ class AllocationTasksPage extends StatelessWidget {
   Widget build(BuildContext context) {
    return Scaffold(
       appBar: AppBar(
-        leading: IconButton(icon: Icon(Icons.arrow_back),
+        leading: IconButton(icon: const Icon(Icons.arrow_back),
         onPressed: (){
           Navigator.pop(context);
         },
         ),
         centerTitle: true,
-       title: Text("Allocation of tasks to Assigned Workspace", 
+       title: const Text("Allocation of tasks to Assigned Workspace", 
        style: TextStyle(color: Colors.white),
        ),
        backgroundColor: Colors.green.shade900,

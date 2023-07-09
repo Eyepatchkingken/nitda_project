@@ -7,13 +7,13 @@ class InfrastrucutrePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(icon: Icon(Icons.arrow_back),
+        leading: IconButton(icon: const Icon(Icons.arrow_back),
         onPressed: (){
           Navigator.pop(context);
         },
         ),
         centerTitle: true,
-       title: Text("Infrastructure and Internal Capabilities", 
+       title: const Text("Infrastructure and Internal Capabilities", 
        style: TextStyle(color: Colors.white),
        ),
        backgroundColor: Colors.green.shade900,

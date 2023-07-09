@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:photo_view/photo_view.dart';
-import 'package:flutter/src/gestures/events.dart';
-import 'package:carousel_slider/carousel_controller.dart';
-import 'package:carousel_slider/carousel_options.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class ImageScreen extends StatefulWidget {
@@ -12,7 +9,7 @@ class ImageScreen extends StatefulWidget {
   final Color appBarColor;
   final Color sliderBackgroundColor;
 
-  ImageScreen({
+  const ImageScreen({super.key, 
     required this.imagePaths,
     required this.appBarTitle,
     required this.appBarColor,
@@ -54,8 +51,8 @@ class _ImageScreenState extends State<ImageScreen> {
                 enableInfiniteScroll: true,
                 reverse: false,
                 autoPlay: true,
-                autoPlayInterval: Duration(seconds: 3),
-                autoPlayAnimationDuration: Duration(milliseconds: 800),
+                autoPlayInterval: const Duration(seconds: 3),
+                autoPlayAnimationDuration: const Duration(milliseconds: 800),
                 autoPlayCurve: Curves.fastOutSlowIn,
                 enlargeCenterPage: true,
                 scrollDirection:
@@ -69,9 +66,9 @@ class _ImageScreenState extends State<ImageScreen> {
             ),
           ),
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(145.0, 0.0, 30, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(145.0, 0.0, 30, 0.0),
             child: Container(
-              margin: EdgeInsets.only(bottom: 50.0),
+              margin: const EdgeInsets.only(bottom: 50.0),
               child: Align(
                 alignment: Alignment.bottomCenter,
                 child: FractionallySizedBox(

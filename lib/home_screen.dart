@@ -47,25 +47,25 @@ class HomePage extends StatelessWidget {
             // the drawer is a collection of widgets
             DrawerHeader(
               // basically the appbar of the drawer
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                   color: Colors.white), // basically the appbar of the drawer
               child: _UserID()
             ),
             Column(
               children: [
                 ListTile(
-                    leading: Icon(
+                    leading: const Icon(
                       Icons.task,
                       color: Colors.white,
                     ),
                     //a list of tiles
-                    title: Text("Allocation of tasks to Assigned Workstreams",
+                    title: const Text("Allocation of tasks to Assigned Workstreams",
                         style: TextStyle(color: Colors.white)),
                     onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: ((context) => ImageScreen(
-                                  imagePaths: [
+                                  imagePaths: const [
                                     'assets/images/allocation_1.jpg',
                                     'assets/images/allocation_2.jpg',
                                   ],
@@ -76,7 +76,7 @@ class HomePage extends StatelessWidget {
                                 ))))),
                 Container(
                   padding: const EdgeInsets.only(left: 15.0, right: 15.0),
-                  child: Divider(
+                  child: const Divider(
                     color: Colors.white,
                     thickness: 0.5,
                   ),
@@ -86,11 +86,11 @@ class HomePage extends StatelessWidget {
             Column(
               children: [
                 ListTile(
-                  leading: Icon(
+                  leading: const Icon(
                     Icons.domain,
                     color: Colors.white,
                   ),
-                  title: Text(
+                  title: const Text(
                     "Infrastructure and Internal Capabilities",
                     style: TextStyle(color: Colors.white),
                   ),
@@ -98,7 +98,7 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => ImageScreen(
-                          imagePaths: [
+                          imagePaths: const [
                             'assets/images/infrastructure.jpg',
                             
                           ],
@@ -111,7 +111,7 @@ class HomePage extends StatelessWidget {
                 ),
                 Container(
                   padding: const EdgeInsets.only(left: 15.0, right: 15.0),
-                  child: Divider(
+                  child: const Divider(
                     color: Colors.white,
                     thickness: 0.5,
                   ),
@@ -121,17 +121,17 @@ class HomePage extends StatelessWidget {
             Column(
               children: [
                 ListTile(
-                  leading: Icon(
+                  leading: const Icon(
                     Icons.tab,
                     color: Colors.white,
                   ),
-                  title: Text("Human Capital, Content and Capacity",
+                  title: const Text("Human Capital, Content and Capacity",
                       style: TextStyle(color: Colors.white)),
                   onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(
                           builder: (context) => ImageScreen(
-                                imagePaths: ['assets/images/human_capital.jpg',
+                                imagePaths: const ['assets/images/human_capital.jpg',
                                              'assets/images/human_capital_2.jpg'
                                 ],
                                 appBarTitle:
@@ -142,7 +142,7 @@ class HomePage extends StatelessWidget {
                 ),
                 Container(
                   padding: const EdgeInsets.only(left: 15.0, right: 15.0),
-                  child: Divider(
+                  child: const Divider(
                     color: Colors.white,
                     thickness: 0.5,
                   ),
@@ -152,11 +152,11 @@ class HomePage extends StatelessWidget {
             Column(
               children: [
                 ListTile(
-                  leading: Icon(
+                  leading: const Icon(
                     Icons.biotech,
                     color: Colors.white,
                   ),
-                  title: Text(
+                  title: const Text(
                     "Research and Development, Education and Emerging Technologies",
                     style: TextStyle(color: Colors.white),
                   ),
@@ -164,7 +164,7 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => ImageScreen(
-                                imagePaths: ['assets/images/Research.jpg', 'assets/images/Research_2.jpg'],
+                                imagePaths: const ['assets/images/Research.jpg', 'assets/images/Research_2.jpg'],
                                 appBarTitle: 'Research and Development',
                                 appBarColor: Colors.green.shade900,
                                 sliderBackgroundColor: Colors.white,
@@ -172,7 +172,7 @@ class HomePage extends StatelessWidget {
                 ),
                 Container(
                   padding: const EdgeInsets.only(left: 15.0, right: 15.0),
-                  child: Divider(
+                  child: const Divider(
                     color: Colors.white,
                     thickness: 0.5,
                   ),
@@ -182,11 +182,11 @@ class HomePage extends StatelessWidget {
             Column(
               children: [
                 ListTile(
-                  leading: Icon(
+                  leading: const Icon(
                     Icons.group,
                     color: Colors.white,
                   ),
-                  title: Text(
+                  title: const Text(
                     "Funding and Partnerships",
                     style: TextStyle(color: Colors.white),
                   ),
@@ -194,7 +194,7 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => ImageScreen(
-                                imagePaths: ['assets/images/funding.jpg', 'assets/images/funding_2.jpg'],
+                                imagePaths: const ['assets/images/funding.jpg', 'assets/images/funding_2.jpg'],
                                 appBarTitle: 'Funding and Partnerships',
                                 appBarColor: Colors.green.shade900,
                                 sliderBackgroundColor: Colors.white,
@@ -202,7 +202,7 @@ class HomePage extends StatelessWidget {
                 ),
                 Container(
                   padding: const EdgeInsets.only(left: 15.0, right: 15.0),
-                  child: Divider(
+                  child: const Divider(
                     color: Colors.white,
                     thickness: 0.5,
                   ),
@@ -212,11 +212,11 @@ class HomePage extends StatelessWidget {
             Column(
               children: [
                 ListTile(
-                  leading: Icon(
+                  leading: const Icon(
                     Icons.auto_graph_outlined,
                     color: Colors.white,
                   ),
-                  title: Text(
+                  title: const Text(
                     "Enterprise Development and Growth",
                     style: TextStyle(color: Colors.white),
                   ),
@@ -224,7 +224,7 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => ImageScreen(
-                                imagePaths: ['assets/images/Enterprise.jpg', 'assets/images/Enterprise_2.jpg'],
+                                imagePaths: const ['assets/images/Enterprise.jpg', 'assets/images/Enterprise_2.jpg'],
                                 appBarTitle:
                                     'Enterprise Development and Growth',
                                 appBarColor: Colors.green.shade900,
@@ -233,7 +233,7 @@ class HomePage extends StatelessWidget {
                 ),
                 Container(
                   padding: const EdgeInsets.only(left: 15.0, right: 15.0),
-                  child: Divider(
+                  child: const Divider(
                     color: Colors.white,
                     thickness: 0.5,
                   ),
@@ -243,11 +243,11 @@ class HomePage extends StatelessWidget {
             Column(
               children: [
                 ListTile(
-                  leading: Icon(
+                  leading: const Icon(
                     Icons.analytics,
                     color: Colors.white,
                   ),
-                  title: Text(
+                  title: const Text(
                     "Monitoring, Data and Analysis",
                     style: TextStyle(color: Colors.white),
                   ),
@@ -255,7 +255,7 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => ImageScreen(
-                                imagePaths: ['assets/images/monitoring.jpg'],
+                                imagePaths: const ['assets/images/monitoring.jpg'],
                                 appBarTitle: 'Monitoring, Data and Analysis',
                                 appBarColor: Colors.green.shade900,
                                 sliderBackgroundColor: Colors.white,
@@ -263,20 +263,20 @@ class HomePage extends StatelessWidget {
                 ),
                 Container(
                   padding: const EdgeInsets.only(left: 15.0, right: 15.0),
-                  child: Divider(
+                  child: const Divider(
                     color: Colors.white,
                     thickness: 0.5,
                   ),
                 ),
               ],
             ),
-            SizedBox(),
+            const SizedBox(),
             ListTile(
-              leading: Icon(
+              leading: const Icon(
                 Icons.phone,
                 color: Colors.white,
               ),
-              title: Text(
+              title: const Text(
                 "Contact Us",
                 style: TextStyle(color: Colors.white),
               ),
@@ -286,17 +286,17 @@ class HomePage extends StatelessWidget {
             ),
             Container(
               padding: const EdgeInsets.only(left: 15.0, right: 15.0),
-              child: Divider(
+              child: const Divider(
                 color: Colors.white,
                 thickness: 0.5,
               ),
             ),
             ListTile(
-              leading: Icon(
+              leading: const Icon(
                 Icons.exit_to_app,
                 color: Colors.white,
               ),
-              title: Text(
+              title: const Text(
                 "Log Out",
                 style: TextStyle(color: Colors.white),
               ),
@@ -308,7 +308,7 @@ class HomePage extends StatelessWidget {
             ),
             Container(
               padding: const EdgeInsets.only(left: 15.0, right: 15.0),
-              child: Divider(
+              child: const Divider(
                 color: Colors.white,
                 thickness: 0.5,
               ),

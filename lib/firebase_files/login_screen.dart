@@ -92,12 +92,12 @@ class _LoginPageState extends State<LoginPage> {
       margin: const EdgeInsets.fromLTRB(0, 4, 0, 4),
       decoration: BoxDecoration(borderRadius: BorderRadius.circular(90)),
       child: ElevatedButton(onPressed: isLoggedIn ? signInWithEmailAndPassword :  createUserWithEmailAndPassword,
-       child: Text(isLoggedIn? 'Log In' : 'Register'),
        style: ButtonStyle(
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
           RoundedRectangleBorder(borderRadius: BorderRadius.circular(30))),
-        backgroundColor: MaterialStatePropertyAll( Color.fromARGB(255, 27, 94, 32).withOpacity(0.9)),
+        backgroundColor: MaterialStatePropertyAll( const Color.fromARGB(255, 27, 94, 32).withOpacity(0.9)),
         ),
+       child: Text(isLoggedIn? 'Log In' : 'Register'),
        ),
     );
   }
@@ -120,7 +120,7 @@ class _LoginPageState extends State<LoginPage> {
         color: Colors.white,
         height: double.infinity,
         width: double.infinity,
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
